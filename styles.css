@@ -1,0 +1,77 @@
+/* placement */
+/* text */
+/* fill */
+
+header{
+ /* placement */
+ position: relative;
+ top: 10px;
+ margin: 0;
+ /* text */
+ font-family: monospace, 'Courier New', Courier;
+ text-align: center;
+ color: whitesmoke;
+ /* fill */
+ background-color: rgb(56, 66, 75);
+ padding: 20px;
+}
+
+/* **** MAIN **** */
+
+main{
+ /* placement */
+ align-content: center;
+ /* text */
+ font-family: monospace, 'Courier New', Courier;
+ /* fill */
+ background-color: rgb(191, 222, 214);
+}
+
+section{
+ /* placement */
+ margin: 20px 20px 0 20px;
+ /* align-content: center; */
+ 
+
+ /* fill */
+ background-color: rgb(56, 66, 75);
+ padding: 20px;
+
+}
+
+.box{
+ /* placement */
+ position: relative;
+ margin: 10px 4%;
+ /* text */
+ color: whitesmoke;
+ /* fill */
+ padding: 20px;
+ background-color: inherit;
+ border: 1px solid white;
+}
+
+/****** FOOTER *******/
+footer{
+ /* placement */
+ position: relative;
+ bottom: 0;
+ /* text */
+ font-family: monospace, 'Courier New', Courier;
+ color: whitesmoke;
+ /* fill */
+ background-color: rgb(56, 66, 75);
+}
+
+footer p{
+ font-size: 12px;
+}
+
+footer nav{
+ font-size: 14px;
+}
+
+/***** MEDIA ADAPTATION *****/
+@media screen and (max-width: 480px){
+ 
+}
