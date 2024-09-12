@@ -1,11 +1,13 @@
 /* placement */
 /* text */
 /* fill */
-
+body{
+    background-color: whitesmoke;
+}
 header{
  /* placement */
  position: relative;
- top: 10px;
+ /* top: 10px; */
  margin: 0;
  /* text */
  font-family: monospace, 'Courier New', Courier;
@@ -17,25 +19,24 @@ header{
 }
 
 /* **** MAIN **** */
-
 main{
  /* placement */
- align-content: center;
+
  /* text */
  font-family: monospace, 'Courier New', Courier;
  /* fill */
- background-color: rgb(191, 222, 214);
+ /* background-color: whitesmoke; */
+ /* background-color: rgb(191, 222, 214); */
 }
 
 section{
  /* placement */
- margin: 20px 20px 0 20px;
- /* align-content: center; */
- 
-
+ margin: 30px 10px 0 10px;
+ max-width: 750px;
  /* fill */
- background-color: rgb(56, 66, 75);
- padding: 20px;
+ background-color: rgb(129, 167, 158);
+ padding: 8px;
+ 
 
 }
 
@@ -49,6 +50,7 @@ section{
  padding: 20px;
  background-color: inherit;
  border: 1px solid white;
+ /* max-width: 400px; */
 }
 
 /****** FOOTER *******/
@@ -72,6 +74,21 @@ footer nav{
 }
 
 /***** MEDIA ADAPTATION *****/
-@media screen and (max-width: 480px){
- 
+@media (max-width: 480px){
+}
+
+@media (min-width: 481px){
+    .content2{
+        margin-left: 10%;
+        margin-right: 10%;
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (min-width: 1025px){
+.box{
+    max-width: 200px;
+    position: sticky;
+}
 }
