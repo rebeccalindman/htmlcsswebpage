@@ -8,14 +8,16 @@ h2{
     text-transform: uppercase;
     font-family: monospace;
     font-size: 1rem;
+    margin-top: 0;
 }
 
 h3{
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
+.icon-linkedin{padding: 5px;}
 
 
 /*** HEADER ***/
@@ -71,19 +73,37 @@ color: black;
     word-wrap: break-word;
     }
 
-.icon-list{
-    font-size: 10px;
-    line-height: 15px;
-    padding: 2%;
-    margin: 0 30% 0 30%;
-    text-transform: lowercase;
+.left-sidebar nav {
+    text-align: left;
+    position: relative;
+    padding: 10px 0;
 }
 
 .icon {
-    padding: 4px;
+    display: inline-block;
+    vertical-align: middle;
 }
+
+.icon-row {
+    margin-bottom: 15px; /* Adjust the spacing between rows */
+}
+
+.icon-list{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 10px;
+    line-height: 15px;
+    text-transform: lowercase;
+}
+
+
 .icon-navigation {
     text-decoration: none; /* removes underline between icons */
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: middle;
+    
 }
 
 .icon-navigation:hover {
@@ -112,7 +132,7 @@ color: black;
     border: 1px solid #ddd;
     border-radius: 7px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(65, 65, 65, 0.189);
     max-width: 300px; /* Adjust based on your needs */
     margin: 10px 5px 10px 5px; /* Space around each box */
     vertical-align: middle; /* Align the boxes correctly */
@@ -120,12 +140,54 @@ color: black;
     position: relative;
 }
 
-.box div {text-align: left;}
+.picture-box {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(65, 65, 65, 0.189);
+    max-width: 400px; /* Adjust based on your needs */
+    margin: 10px 5px 10px 5px; /* Space around each box */
+    vertical-align: middle; /* Align the boxes correctly */
+    text-align: left;
+    position: relative;
+}
+.picture-box img {
+    max-width: 100%;
+}
+.about-box{
+    display: block;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 400px; /* Adjust based on your needs */
+    min-height: 400px;
+    margin: 10px 5px 10px 5px; /* Space around each box */
+    text-align: left;
+    position: relative;
+}
 
-.box nav{
+
+.box div, .about-box div {text-align: left;}
+
+
+.box nav {
     position: absolute;
     top: 5px;
     right: 20px;
+    white-space: nowrap; /* Prevents the items from wrapping onto the next line */
+}
+
+.icon-navigation {
+    display: inline-block; /* Ensures that each icon behaves like an inline element */
+    margin-left: 10px; /* Adds some space between the icons */
+    text-decoration: none; /* Removes underline from links */
+    /*vertical-align: middle; /* Ensures the icons are aligned vertically */
 }
 
 /****** FOOTER *******/
@@ -152,6 +214,22 @@ footer nav a{
 
 /***** MEDIA ADAPTATION *****/
 @media (max-width: 480px) {
+   
+    .left-sidebar {
+        text-align: center; /* Ensure all items are centered in the sidebar */
+    }
+     .icon-list {
+        margin-left: 0;
+        display: block;
+        vertical-align: middle;
+        padding: 0;
+        text-align: center;
+    } 
+
+    .icon {
+        padding: 4px;
+    }
+
     .box {
         display: block;
         max-width: 100%;
@@ -161,43 +239,30 @@ footer nav a{
 }
 
 @media (min-width: 481px) {
-    h2{
-        letter-spacing: 0.5rem;
-        font-size: 1.5rem;
-    }
-    
-    h3{
-        font-size: 1rem;
-        margin-top: 40px;
-    }
-    .box {
-        max-width: 400px;
-        margin: 10px 1%;
-    }
-    .left-sidebar{
-        width: 200px;
-    }
+    h2 {letter-spacing: 0.5rem; font-size: 1.1rem; margin-top: 10px;} 
+    h3 {font-size: 1rem; margin-top: 40px;}
+    p {font-size: 1.1rem;}
 
+    .left-sidebar{width: 200px;}
     .left-sidebar p {font-size: 1rem; }
-    .content{
-        margin-left: 220px;
-    }
+
+    .content{margin-left: 220px;}
+    .box {max-width: 400px; 
+        margin: 10px 2%;}
     
- 
+    .about-box{margin: 10px 5% 10px 5%;}
+
+    .content{max-width: 100%;} 
+}
+
+@media (min-width: 801px){
+    .picture-box {width: 40%;}
 }
 
 @media (min-width: 1025px){
-    .box {
-        margin: 10px 1%; /* Add margins to space out the boxes */
-        max-width: 380px;
-        
-    }
+    .box {margin: 10px 1%; }/* Add margins to space out the boxes */
    
-    .content{
-        max-width: 1000px;
-    }
+    .picture-box {width: 30%;}
+    .content{max-width: 2600px;}
 
-    .box div{
-        /* max-width: 400px; */
-    }
 }
