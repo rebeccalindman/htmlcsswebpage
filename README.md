@@ -39,4 +39,39 @@ innehåll
 - bilder på växter
 
 
+____
+placeholder gammal kod
 
+/* **** MAIN **** */
+main{
+ /* placement */
+
+ /* text */
+ font-family: monospace, 'Courier New', Courier;
+ /* fill */
+ /* background-color: whitesmoke; */
+ /* background-color: rgb(191, 222, 214); */
+}
+
+section{
+ /* placement */
+ margin: 30px 10px 0 10px;
+ max-width: 750px;
+ /* fill */
+ background-color: rgb(129, 167, 158);
+ padding: 8px;
+ 
+
+}
+
+.box{
+ /* placement */
+ position: relative;
+ margin: 10px 4%;
+ /* text */
+ color: whitesmoke;
+ /* fill */
+ padding: 20px;
+ background-color: inherit;
+ border: 1px solid white;
+ /* max-width: 400px; */
