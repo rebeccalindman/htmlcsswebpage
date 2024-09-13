@@ -1,44 +1,101 @@
-/* placement */
-/* text */
-/* fill */
-body{
-    background-color: whitesmoke;
-   /*  position: relative; */
+
+body{background-color: whitesmoke;}
+
+h1{font-size: 2.5rem; letter-spacing: 0.3rem;}
+
+h2{
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 1rem;
 }
+
+h3{
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    margin-top: 40px;
+}
+
+
+
+/*** HEADER ***/
 header{
- /* placement */
  position: relative;
  margin: 0;
- /* text */
+ background-color: rgb(56, 66, 75);
+ padding: 20px;
  font-family: monospace, 'Courier New', Courier;
  text-align: center;
  color: whitesmoke;
- /* fill */
- background-color: rgb(56, 66, 75);
- padding: 20px;
 }
 
+header h1:hover{
+color: black;
+}
+
+.pages-menu a{
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+
+
+.pages-menu a:hover{
+    background-color: rgb(238, 205, 37);
+    padding: 3px;
+    color: black;
+    border-radius: 4px;
+}
+
+/**** MAIN CONTENT ****/
 .wrapper{
     position: relative;
 }
 
-.left-sidebar{
-    width: 200px;
+/*** left sidebar ***/
+.left-sidebar {
+    width: 100px;
     position: absolute;
     left:0;
     top: 0;
-    bottom: 0;
-    padding: 20px;
+    bottom: 0; 
+    padding: 10px;
     box-sizing: border-box;
     background-color: rgb(238, 205, 37);
+    text-align: center;
+    font-family: monospace, 'Courier New', Courier;
 }
 
-/* .left-sidebar, .left-sidebar *, .left-sidebar *:after, .left-sidebar *:before {
-    box-sizing: border-box;
-} */
+.left-sidebar p {
+    font-size: 0.7rem; 
+    word-wrap: break-word;
+    }
 
+.icon-list{
+    font-size: 10px;
+    line-height: 15px;
+    padding: 2%;
+    margin: 0 30% 0 30%;
+    text-transform: lowercase;
+}
+
+.icon {
+    padding: 4px;
+}
+.icon-navigation {
+    text-decoration: none; /* removes underline between icons */
+}
+
+.icon-navigation:hover {
+    /* background-color: aliceblue; */
+    padding: 20px 0px 0px 0px;
+    background-color: rgb(207, 178, 30);
+    border-radius: 4px;
+}
+
+/*** content  ***/
 .content{
-    margin-left: 220px; /* space for sidebar */
+    margin-left: 120px; /* space for sidebar */
     text-align: center;
 }
 
@@ -53,17 +110,22 @@ header{
     box-sizing: border-box;
     background-color: white;
     border: 1px solid #ddd;
+    border-radius: 7px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     max-width: 300px; /* Adjust based on your needs */
-    margin: 10px; /* Space around each box */
+    margin: 10px 5px 10px 5px; /* Space around each box */
     vertical-align: middle; /* Align the boxes correctly */
     text-align: left;
+    position: relative;
 }
 
-.box div {
-    margin: 10px;
-    text-align: left;
+.box div {text-align: left;}
+
+.box nav{
+    position: absolute;
+    top: 5px;
+    right: 20px;
 }
 
 /****** FOOTER *******/
@@ -94,29 +156,47 @@ footer nav a{
         display: block;
         max-width: 100%;
     }
-    .left-sidebar{
-        max-width: 100px;
-    }
-    .content{
-        margin-left: 120px;
-    }
+
+    
 }
 
 @media (min-width: 481px) {
+    h2{
+        letter-spacing: 0.5rem;
+        font-size: 1.5rem;
+    }
+    
+    h3{
+        font-size: 1rem;
+        margin-top: 40px;
+    }
     .box {
+        max-width: 400px;
         margin: 10px 1%;
     }
     .left-sidebar{
         width: 200px;
     }
+
+    .left-sidebar p {font-size: 1rem; }
+    .content{
+        margin-left: 220px;
+    }
+    
+ 
 }
 
 @media (min-width: 1025px){
     .box {
-        margin: 10px 2%; /* Add margins to space out the boxes */
-        max-width: 400px;
+        margin: 10px 1%; /* Add margins to space out the boxes */
+        max-width: 380px;
         
     }
+   
+    .content{
+        max-width: 1000px;
+    }
+
     .box div{
         /* max-width: 400px; */
     }
