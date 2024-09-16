@@ -20,6 +20,14 @@ h3{
     margin-top: 30px;
 }
 
+#welcome-text{
+    position: absolute;
+    top: 350px;
+}
+
+#welcome-text, #category-text h3 {scale: 0.8}
+
+
 .icon-linkedin{padding: 5px;}
 
 
@@ -54,6 +62,7 @@ header h1:hover{color: black;}
 /*** left sidebar ***/
 .left-sidebar {
     width: 100px;
+    min-height: 800px;
     position: absolute;
     left:0;
     top: 0;
@@ -65,7 +74,7 @@ header h1:hover{color: black;}
     font-size: 0.7rem; 
 }
 
-.left-sidebar p {word-wrap: break-word;}
+/* .left-sidebar p {word-wrap: break-word;} */
 
 .left-sidebar nav {
     text-align: left;
@@ -116,6 +125,7 @@ header h1:hover{color: black;}
     text-align: center; 
     width: 100%; /* full width */
     margin-top: 5px;
+    min-height: 400px;
 }
 
 .box, .picture-box, .about-box{
@@ -162,8 +172,7 @@ footer{
     padding: 10px;
     color: whitesmoke;
     /* placement */
-    position: relative;   
-    bottom: 0;
+    position: relative;  
     text-align: center;
 }
 
@@ -175,12 +184,23 @@ footer nav a{
 /***** MEDIA ADAPTATION *****/
 
 /* @media (max-width: 480px) {
+
 } */
 
 @media (min-width: 481px) {
     h2 {letter-spacing: 0.5rem; font-size: 1.1rem; margin-top: 10px;} 
     h3 {font-size: 1rem; margin-top: 40px;}
     /* p {font-size: 1.1rem;} */
+
+#welcome-text{
+    position: relative;
+    top: 0;
+    scale:1;
+}
+
+#category-text h3{
+    scale:1;
+}
 
     .left-sidebar{width: 200px;}
     .left-sidebar p {font-size: 1rem; }
