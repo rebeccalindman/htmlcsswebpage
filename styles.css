@@ -143,11 +143,11 @@ header h1:hover{color: black;}
     border-radius: 7px;
     box-shadow: 0 0 5px rgba(65, 65, 65, 0.189);
 }
-/* PICTURE BOX */
+/* PICTURE-BOX */
 .picture-box {display: inline-block;}
 .picture-box img {max-width: 100%;}
 
-/* about-box */
+/* ABOUT-BOX */
 .about-box{
     max-width: 400px; /* Adjust based on your needs */
     min-height: 400px;
