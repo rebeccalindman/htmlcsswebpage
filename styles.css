@@ -20,12 +20,12 @@ h3{
     margin-top: 30px;
 }
 
-#welcome-text{
+.welcome-text not #about-welcome-text{
     position: absolute;
     top: 350px;
 }
 
-#welcome-text, #category-text h3 {scale: 0.8}
+.welcome-text, .category-text h3 {scale: 0.8}
 
 
 .icon-linkedin{padding: 5px;}
@@ -108,8 +108,6 @@ header h1:hover{color: black;}
 }
 
 .icon-navigation:hover {
-    /* background-color: aliceblue; */
-    padding: 20px 0px 0px 0px;
     background-color: rgb(207, 178, 30);
     border-radius: 4px;
 }
@@ -118,6 +116,7 @@ header h1:hover{color: black;}
 .content{
     margin-left: 120px; /* space for sidebar */
     text-align: center;
+    min-height: 800px;
 }
 
 .box-container {
@@ -192,7 +191,7 @@ footer nav a{
     h3 {font-size: 1rem; margin-top: 40px;}
     /* p {font-size: 1.1rem;} */
 
-#welcome-text{
+.welcome-text{
     position: relative;
     top: 0;
     scale:1;
